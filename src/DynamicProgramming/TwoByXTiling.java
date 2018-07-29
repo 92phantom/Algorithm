@@ -29,6 +29,7 @@ public class TwoByXTiling {
 		
 		for(int i=2; i<=size; i++){
 			d[i] = d[i-1] + d[i-2];	
+			d[i] %= 10007;
 		}
 		
 		System.out.println(d[size]);
