@@ -9,10 +9,10 @@ import java.util.StringTokenizer;
 
 /*
  * @author 
- * HYUNJIN PARK
+ * 	HYUNJIN PARK
  * 
  * @date
- * 2018.08.12
+ * 	2018.08.12
  * 
  * @result
  * 	15344KB
@@ -40,10 +40,7 @@ public class HideAndSeek_1697 {
 	}
 	
 	/*
-	 * 
 	 * Pipelining 
-	 * 
-	 * 
 	 */
 	static int dfs(int n, int k){
 		
