@@ -19,9 +19,15 @@ public class boj_1339 {
 		int len;
 		
 		for(int i=0; i<N; i++){
+			
 			len = (word[i] = br.readLine()).length();
-			for(int j=0; j<len; j++)
+			
+			for(int j=0; j<len; j++){
+				
 				map[word[i].charAt(j)-65] += (int)Math.pow(10,  len-j-1);
+			}
+			
+			sort(map, 0, 0);
 			
 			
 		}

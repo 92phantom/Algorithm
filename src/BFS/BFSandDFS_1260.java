@@ -47,7 +47,7 @@ class BFSandDFS_1260 {
 		}
 	}
 
-	public static void bfs(int v) {
+	static void bfs(int v) {
 		Queue<Integer> q = new LinkedList<Integer>();
 		q.add(v);
 		check[v] = true;

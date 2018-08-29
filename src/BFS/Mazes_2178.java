@@ -24,7 +24,7 @@ public class Mazes_2178 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);		
 		String word;
-		StringTokenizer st= new StringTokenizer(input.nextLine(), " " );
+		StringTokenizer st= new StringTokenizer(input.nextLine(), " ");
 
 		N = Integer.parseInt(st.nextToken());
 		M = Integer.parseInt(st.nextToken());

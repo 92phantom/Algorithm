@@ -48,7 +48,7 @@ public class boj_7576 {
         System.out.print(max-1);
     }
     
-    private static void bfs(int a, int b) {
+    static void bfs(int a, int b) {
         Queue<Node> q = new <Node>LinkedList();
         q.offer(new Node(a, b));
         while(!q.isEmpty()) {

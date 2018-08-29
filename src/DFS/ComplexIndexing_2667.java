@@ -28,6 +28,7 @@ public class ComplexIndexing_2667 {
 		adMatrix = new int[N + 1][N + 1];
 		visited = new boolean[N + 1][N + 1];
 		String[] s = new String[N + 1];
+		
 		for (int i = 1; i <= N; i++) {
 			s[i] = sc.next();
 			for (int j = 1; j <= N; j++) {
@@ -45,7 +46,8 @@ public class ComplexIndexing_2667 {
 				}
 			}
 		}
-		Collections.sort(list); // 오름차순 정렬함수
+		
+		Collections.sort(list); 
 		System.out.println(totalCNT);
 		for (int x : list) {
 			System.out.println(x);
@@ -56,7 +58,7 @@ public class ComplexIndexing_2667 {
 
 	static int DFS(int row, int col, int totalCNT, int cnt) {
 		cnt++;
-		visited[row][col] = true; // 1 true, 0 false
+		visited[row][col] = true; 
 		for (int i = 0; i < 4; i++) {
 			int nextRow = row + dx[i];
 			int nextCol = col + dy[i];
