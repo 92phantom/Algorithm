@@ -11,7 +11,7 @@ import java.util.StringTokenizer;
 public class boj_1389 {
 
 	static int N, M;
-	static int[][] map;
+	static int[][] map = new int[101][101];
 	static boolean[] visited;
 	static int[] memoization;
 	
@@ -19,12 +19,9 @@ public class boj_1389 {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
-
 		N = Integer.parseInt(st.nextToken());
 		M = Integer.parseInt(st.nextToken());
 
-		map = new int[101][101];
-		visited = new boolean[N + 1];
 		memoization = new int[101];
 		
 		for (int i = 0; i < M; i++) {
@@ -36,12 +33,10 @@ public class boj_1389 {
 		}
 
 		for(int startPoint=1; startPoint<=N; startPoint++){
-			
+			visited = new boolean[N + 1];
 			bfs(new Pivot(startPoint, 0), startPoint);
-			visited = new boolean[M + 1];
-
 		}
-
+		
 		System.out.println(minIndex());
 
 	}
