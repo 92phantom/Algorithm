@@ -4,7 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
-
+// 마지막 전 계단을 밟은 경우
+// 마지막 전 계단을 밟지 않은경우
 public class boj_2579 {
 
 	static int N;
@@ -15,8 +16,8 @@ public class boj_2579 {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine(), "");
-
-		N = Integer.parseInt(st.nextToken());
+	
+			N = Integer.parseInt(st.nextToken());
 
 		stairs = new int[N+1];
 		dp = new int[N+1];
