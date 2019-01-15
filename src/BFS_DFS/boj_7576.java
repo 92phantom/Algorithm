@@ -1,4 +1,4 @@
-package BFS;
+package BFS_DFS;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

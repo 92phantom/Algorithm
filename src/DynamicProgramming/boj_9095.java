@@ -1,50 +1,40 @@
 package DynamicProgramming;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.StringTokenizer;
 
 public class boj_9095 {
 
-	static int T, n;
-	static int[] dp;
+	static int T, N;
+	static int[] memoization;
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws NumberFormatException, IOException {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st = new StringTokenizer(br.readLine(), "");
 
-		T = Integer.parseInt(st.nextToken());
-		dp = new int[12];
-//		int[] temp = new int[T];
+		T = Integer.parseInt(br.readLine());
 		
-		dp[1] = 1;
-		dp[2] = 2;
-		dp[3] = 4;
-		dp[4] = 7;
-		dp[7] = 44;
-		dp[10] = 274;
+		memoization = new int[12];
+		memoization[1] = 1;
+		memoization[2] = 2;
+		memoization[3] = 4;
+		memoization[4] = 7;
+		memoization[7] = 44;
+		
+		for (int i = 5; i <= 11; i++) {
 
-		
-		for (int j = 4; j < 12; j++) {
-			dp[j] = dp[j - 1] + dp[j - 2] + dp[j - 3];
+			memoization[i] = memoization[i - 3] + memoization[i - 2] + memoization[i - 1];
 		}
+
+		
 		
 		for (int i = 0; i < T; i++) {
+			
+			N = Integer.parseInt(br.readLine());
+			System.out.println(memoization[N]);
 
-			st = new StringTokenizer(br.readLine(), "");
-			n = Integer.parseInt(st.nextToken());
-			System.out.println(dp[i]);
-
-//			temp[i] = dp[n];
 		}
-		
-//		for(int i=0; i<T; i++){
-//			
-//			System.out.println(temp[i]);
-//			
-//		}
+
 
 	}
 }

@@ -1,92 +1,108 @@
 package Kakao;
-
-import java.util.Iterator;
+import java.util.ArrayList;
 import java.util.StringTokenizer;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class Kakao_1 {
 
-	static ConcurrentHashMap<String, String> map = new ConcurrentHashMap<>();
+	public static ConcurrentHashMap<String, Info> map = new ConcurrentHashMap<String, Info>();
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String[] data = { "Enter uid1234 Muzi", "Enter uid4567 Prodo", "Leave uid1234", "Enter uid1234 Prodo",
-				"Change uid4567 Ryan", "Enter uid4567 Ryan", "Change uid1234 Muzi" };
-		
-		String[] result = solution(data);
-		
-		for(int i=0; i<result.length; i++){
-			
-			System.out.println(result[i]);
-			
-		}
-		
+		String[] input = new String[5];
+		input[0] = "Enter uid1234 Muzi";
+		input[1] = "Enter uid4567 Prodo";
+		input[2] = "Leave uid1234";
+		input[3] = "Enter uid1234 Prodo";
+		input[4] = "Change uid4567 Ryan";
+
+		solution(input);
 		
 	}
 
-	static String[] solution(String[] data) {
+	static String[] solution(String[] record) {
 
-		int arrSize = data.length;
+		ArrayList<String> arList = new ArrayList<String>();
 
-		for (int i = 0; i < data.length; i++) {
+		StringTokenizer st;
 
-			if (data[i].contains("Change")) {
-				arrSize -= 1;
-			}
+		// STORE TO ARR(answer)
+		for (int i = 0; i < record.length; i++) {
 
-		}
-		
-		
-		String[] ans = new String[arrSize];
+			st = new StringTokenizer(record[i], " ");
 
-		int pointer = 0;
-		
-		for (int i = 0; i < data.length; i++) {
-			StringTokenizer st = new StringTokenizer(data[i], " ");
-
-			String sort = st.nextToken();
+			String status = st.nextToken();
 			String id = st.nextToken();
 
-			if (sort.matches("Enter|Change")) {
-				
-				String name = st.nextToken();
+			if (status.matches("Enter|Change")) {
 
-				if (sort.contains("Enter")) {
-					ans[pointer] = id + " 들어왔습니다.";
-					pointer += 1;
-					map.put(id, name);
+				String nickName = st.nextToken();
+				map.put(id, new Info(nickName, status));
 
-				} else {
-						
-					map.replace(id, name);
+				if (status.equals("Enter")) {
+					arList.add(id + "_님이 들어왔습니다.");
+				}
+
+				else if (status.equals("Change")) {
 					
+					// ID -> Nickname 변경
+					map.get(id).setNickName(nickName);
+
 				}
 				
+			} else {
 
-			} else if (sort.contains("Leave")) {
-				
-				ans[pointer] = id + " 나갔습니다.";				
-				pointer += 1;
-				
+				map.get(id).setStatus(status);
+				arList.add(id + "_님이 나갔습니다.");
+
 			}
 
 		}
 
-		
-		
-		for(int i=0; i<ans.length; i++){
-			
-			String temp = ans[i].split(" ")[0];
-			if(map.containsKey(temp)){
-				
-				ans[i] = ans[i].replaceAll(temp, map.get(temp)+"님이");
-				
-			}
-			
+		// SYSOUT ID-> NICKNAME
+
+		String[] answer = new String[arList.size()];
+
+		for (int i = 0; i < arList.size(); i++) {
+
+			String[] arr = arList.get(i).split("_");
+			String key = arr[0];
+			String nickName = map.get(key).nickName;
+
+			answer[i] = nickName + arr[1];
+
 		}
-		
-		return ans;
+
+		return answer;
+	}
+}
+
+class Info {
+
+	String nickName, status;
+
+	Info(String nickName, String status) {
+
+		setNickName(nickName);
+		setStatus(status);
+
+	}
+
+	public String getNickName() {
+		return nickName;
+	}
+
+	public void setNickName(String nickName) {
+		this.nickName = nickName;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
 	}
 
 }

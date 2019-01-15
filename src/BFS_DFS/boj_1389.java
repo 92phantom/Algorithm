@@ -1,4 +1,4 @@
-package DFS;
+package BFS_DFS;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -34,7 +34,7 @@ public class boj_1389 {
 
 		for(int startPoint=1; startPoint<=N; startPoint++){
 			visited = new boolean[N + 1];
-			bfs(new Pivot(startPoint, 0), startPoint);
+			bfs(new Pivot1389(startPoint, 0), startPoint);
 		}
 		
 		System.out.println(minIndex());
@@ -54,23 +54,23 @@ public class boj_1389 {
 		return idx;
 	}
 	
-	static void bfs(Pivot p, int startPoint) {
+	static void bfs(Pivot1389 p, int startPoint) {
 
-		Queue<Pivot> q = new LinkedList<>();
+		Queue<Pivot1389> q = new LinkedList<>();
 		q.add(p);
 	
 		visited[p.v] = true;
 
 		while (!q.isEmpty()) {
 
-			Pivot pivot = q.poll();
+			Pivot1389 pivot = q.poll();
 			
 			memoization[startPoint]+=pivot.depth;
 				
 			for (int i = 1; i <= N; i++) {
 				if (!visited[i] && map[pivot.v][i] == 1) {
 					visited[i] = true;
-					q.add(new Pivot(i, (pivot.depth+1)));
+					q.add(new Pivot1389(i, (pivot.depth+1)));
 				}
 			}
 		}
@@ -78,11 +78,11 @@ public class boj_1389 {
 	}
 }
 
-class Pivot {
+class Pivot1389 {
 
 	int v, depth;
 
-	Pivot(int v, int depth) {
+	Pivot1389(int v, int depth) {
 		this.v = v;
 		this.depth = depth;
 	}

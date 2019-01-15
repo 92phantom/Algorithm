@@ -1,4 +1,4 @@
-package DepthFirstSearch;
+package BFS_DFS;
 
 
 import java.io.BufferedReader;
