@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class boj_1759 {
+public class boj_1759_DFS {
 
 	// N은 전체 사이즈, R은 찾고자하는 사이즈
 	// 순열 : 찾고자 하는 경우를 모두 나열하는 형태 6P4
