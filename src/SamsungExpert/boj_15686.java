@@ -3,90 +3,117 @@ package SamsungExpert;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 public class boj_15686 {
 
 	static int N, M;
-	static int map[][];
-	static int[] dx = { -1, 0, 1, 0 };
-	static int[] dy = { 0, -1, 0, 1 };
-	static int DISTANCE_MIN = Integer.MAX_VALUE;
+	static int ans = Integer.MAX_VALUE;
+	static int[][] map;
+	static int[] selectedChick;
+	static ArrayList<Node> homeList = new ArrayList<>();
+	static ArrayList<Node> chickList = new ArrayList<>();
 
 	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
-
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
 		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 
 		N = Integer.parseInt(st.nextToken());
 		M = Integer.parseInt(st.nextToken());
 
 		map = new int[N][N];
-		
-		for (int i = 0; i < N; i++) {
-			st = new StringTokenizer(br.readLine(), " ");
-			
-			for (int j = 0; j < N; j++) {
-				map[i][j] = Integer.parseInt(st.nextToken());
-				
-			}
-		}
 
 		for (int i = 0; i < N; i++) {
+			st = new StringTokenizer(br.readLine(), " ");
+
 			for (int j = 0; j < N; j++) {
-				if (map[i][j] == 1){
-					
-					dfs(new Point15686(j, i, M));
-					
+
+				int id = Integer.parseInt(st.nextToken());
+
+				if (id == 1) {
+					homeList.add(new Node(i, j, false));
+				} else if (id == 2) {
+					chickList.add(new Node(i, j, false));
 				}
+
+				map[i][j] = id;
+
 			}
+
 		}
-		
-		System.out.println(DISTANCE_MIN);
+
+		selectedChick = new int[chickList.size()];
+
+		for (int i = 0; i < chickList.size(); i++) {
+
+			chickList.get(i).visited = true;
+			chickSelect(i, 0);
+
+			// Back Tracking
+			chickList.get(i).visited = false;
+
+		}
+
+		System.out.println(ans);
 
 	}
 
-	static void dfs(Point15686 p) {
+	static void chickSelect(int index, int depth) {
 
-		int tempMin = Integer.MAX_VALUE;
-		
-		for (int i = 0; i < N; i++) {
+		selectedChick[depth] = index;
 
-			for (int j = 0; j < N; j++) {
+		// 3 SELECT
+		if (depth == (M - 1)) {
 
-				if (map[i][j] == 2) {
+			int sum = 0;
+			int distance = 0;
 
-					int disX = Math.abs(j - p.x);
-					int disY = Math.abs(i - p.y);
+			for (int i = 0; i < homeList.size(); i++) {
 
-					if(tempMin> (disX + disY)){
-						tempMin = disX + disY;
-					}
+				int min = Integer.MAX_VALUE;
+
+				for (int j = 0; j < M; j++) {
+					distance = Math.abs(homeList.get(i).x - chickList.get(selectedChick[j]).x)
+							+ Math.abs(homeList.get(i).y - chickList.get(selectedChick[j]).y);
+					min = Math.min(min, distance);
 				}
+
+				sum += min;
 
 			}
 
+			ans = Math.min(ans, sum);
+
 		}
 		
-		if(DISTANCE_MIN > tempMin)
-			DISTANCE_MIN = tempMin;
 		
-		map[p.y][p.x] = 0;
+		for (int i = index; i < chickList.size(); i++) {
+
+			if (chickList.get(i).visited)
+				continue;
+
+			chickList.get(i).visited = true;
+			chickSelect(i, depth + 1);
+			// Back
+			chickList.get(i).visited = false;
+		}
+
+
 
 	}
 
 }
 
-class Point15686 {
+class Node {
 
-	int x, y, chick;
+	int y, x;
+	boolean visited;
 
-	Point15686(int x, int y, int chick) {
-		this.x = x;
+	Node(int y, int x, boolean visited) {
 		this.y = y;
-		this.chick = chick;
+		this.x = x;
+		this.visited = visited;
 	}
 
 }
