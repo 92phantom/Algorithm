@@ -17,7 +17,7 @@ public class boj_1747 {
 
 		N = Integer.parseInt(br.readLine());
 
-		for (int i = N; i <= 1000000; i++) {
+		for (int i = N; i <= 1004000; i++) {
 
 			if(i==1) {
 				System.out.println(2);

@@ -78,13 +78,9 @@ public class boj_15686 {
 							+ Math.abs(homeList.get(i).y - chickList.get(selectedChick[j]).y);
 					min = Math.min(min, distance);
 				}
-
 				sum += min;
-
 			}
-
 			ans = Math.min(ans, sum);
-
 		}
 		
 		
