@@ -10,8 +10,8 @@ import java.util.StringTokenizer;
 
 public class boj_16236 {
 
-	static int[] dx = { 0, 0, 1, -1 };
-	static int[] dy = { 1, -1, 0, 0 };
+	static int[] dx = { 0, -1, 0, 1 };
+	static int[] dy = { -1, 0, 1, 0 };
 	static int N;
 	static int[][] map;
 	static ArrayList<Items> fish = new ArrayList<Items>();
@@ -62,9 +62,9 @@ public class boj_16236 {
 			for (int j = 0; j < size; j++) {
 
 				Items item = q.poll();
+				System.out.println("===");
 
 				for (int i = 0; i < 4; i++) {
-
 					int nextX = dx[i] + item.x;
 					int nextY = dy[i] + item.y;
 
@@ -78,19 +78,24 @@ public class boj_16236 {
 					
 					visited[nextY][nextX] = true;
 					q.add(new Items(nextX, nextY, item.big, item.eat, item.cnt + 1));
-
+					System.out.println("넣자" + nextX +"//////"+nextY);
 					if (map[nextY][nextX] != 0 && map[nextY][nextX] != item.big) {
-						
+						System.out.println("뭐야");
+						System.out.println("다음"+nextY);
+						System.out.println("현재"+eatY);
 						if (nextY < eatY) {
-
+							System.out.println(nextY);
 							eatY = nextY;
 							eatX = nextX;
 							eat = item.eat;
 							big = item.big;
 							cnt = item.cnt + 1;
-							
+							System.out.println("여기");
+							System.out.println(eatY);
+							System.out.println(eatX);
+							System.out.println("C"+cnt);
 						} else if (nextY == eatY) {
-
+							System.out.println("여기는");
 							if (nextX < eatX) {
 								eatY = nextY;
 								eatX = nextX;
