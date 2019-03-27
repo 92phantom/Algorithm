@@ -24,11 +24,6 @@ public class boj_15683 {
 		M = Integer.parseInt(st.nextToken());
 
 		map = new int[N][M];
-//		visited = new boolean[N][M];
-
-//		ans = N * M;
-
-//		System.out.println(ans);
 		for (int i = 0; i < N; i++) {
 
 			st = new StringTokenizer(br.readLine(), " ");
@@ -39,44 +34,7 @@ public class boj_15683 {
 				map[i][j] = temp;
 				if (temp > 0 && temp < 6) {
 					list.add(new Pivot(i, j, temp));
-//					ans -= 1;
-				} else if (temp == 6) {
-//					ans -= 1;
 				}
-			}
-
-		}
-
-		// Check True Camera 5
-		for (int i = 0; i < list.size(); i++) {
-
-			if (list.get(i).cameraNum == 5) {
-
-				ans += 1;
-
-				int curX = list.get(i).x;
-				int curY = list.get(i).y;
-
-				// x축 변환
-				for (int j = 0; j < M; j++) {
-					if (map[curY][j] == 6) {
-						break;
-					} else if (map[curY][j] == 0) {
-						map[curY][j] = 9;
-//						ans -= 1;
-					}
-				}
-
-				// y축 변환
-				for (int j = 0; j < N; j++) {
-					if (map[j][curX] == 6) {
-						break;
-					} else if (map[j][curX] == 0) {
-						map[j][curX] = 9;
-//						ans -= 1;
-					}
-				}
-
 			}
 
 		}
@@ -130,8 +88,6 @@ public class boj_15683 {
 			int cX = p.x;
 			int cY = p.y;
 
-//			System.out.println(cNum);
-
 			if (cNum == 1) {
 
 				for (int k = 0; k < 4; k++) {
@@ -184,6 +140,25 @@ public class boj_15683 {
 					dfs(index + 1, visited);
 				}
 
+			}
+			
+			else if (cNum == 5) {
+				
+				for(int i=0; i<N; i++) {
+					
+					
+					visited[i] = Arrays.copyOf(dupMap[i], M);
+					
+					detect(visited, cY, cX, 0);
+					detect(visited, cY, cX, 1);
+					detect(visited, cY, cX, 2);
+					detect(visited, cY, cX, 3);
+
+					dfs(index + 1, visited);
+					
+				}
+				
+				
 			}
 
 		}
