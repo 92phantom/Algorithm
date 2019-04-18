@@ -1,3 +1,4 @@
+
 // 이분 탐색, 랜선자르기
 
 import java.io.BufferedReader;
@@ -47,12 +48,12 @@ public class boj_1654 {
 				while ((input - CUT) >= 0) {
 					result += 1;
 					input -= CUT;
-					
+
 					// 이거없으면 시간 초과
-					if(result >= N) {
+					if (result >= N) {
 						break;
 					}
-					
+
 				}
 
 			}

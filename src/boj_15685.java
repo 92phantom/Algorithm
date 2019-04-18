@@ -73,9 +73,7 @@ public class boj_15685 {
 		for (int i = start; i >= 0; i--) {
 
 			int next = (list.get(i) + 1) % 4;
-
 			list.add(next);
-
 		}
 
 		draw(curG + 1, g);

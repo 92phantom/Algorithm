@@ -24,9 +24,6 @@ public class Hash_ex_4 {
 
 		}
 
-		
-		
-		
 		HashMap<String, Integer> playsPerGenres = new HashMap<>();
 		for (int i = 0; i < genres.length; i++) {
 
@@ -71,32 +68,29 @@ public class Hash_ex_4 {
 		for (int i = 0; i < songs.size(); i++) {
 
 			String genre = songs.get(i).genre;
-			
-			
-			if(numberOfSelectedSongsOfGenres.containsKey(genre) && numberOfSelectedSongsOfGenres.get(genre) >= 2) 
+
+			if (numberOfSelectedSongsOfGenres.containsKey(genre) && numberOfSelectedSongsOfGenres.get(genre) >= 2)
 				continue;
-			
+
 			answers.add(songs.get(i).id);
-			
-			
-			if(numberOfSelectedSongsOfGenres.containsKey(genre)) {
-                numberOfSelectedSongsOfGenres.put(genre, numberOfSelectedSongsOfGenres.get(genre) + 1);
-			}else {
-                numberOfSelectedSongsOfGenres.put(genre, 1);
+
+			if (numberOfSelectedSongsOfGenres.containsKey(genre)) {
+				numberOfSelectedSongsOfGenres.put(genre, numberOfSelectedSongsOfGenres.get(genre) + 1);
+			} else {
+				numberOfSelectedSongsOfGenres.put(genre, 1);
 
 			}
-			
+
 		}
 
 		answer = new int[answers.size()];
-		
+
 		System.out.println(answers);
-		
-		for(int i=0; i<answers.size(); i++) {
+
+		for (int i = 0; i < answers.size(); i++) {
 			answer[i] = answers.get(i);
 		}
-		
-		
+
 		return answer;
 	}
 
