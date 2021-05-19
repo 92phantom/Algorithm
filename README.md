@@ -1,2 +1,0 @@
-# SoftwareTest
-Preparing for SoftwareTest
