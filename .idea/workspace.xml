@@ -5,30 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39319bb8-acdc-41e0-80b5-7753541f3486" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/study/algorithm/LeetCode218.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/study/algorithm/LeetCode44.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/study/algorithm/LeetCode53.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/study/algorithm/LeetCode74.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/study/algorithm/LeetCode873.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Algorithm.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/study/algorithm/LeetCode693.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/study/algorithm/LeetCode838.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/study/algorithm/AlgorithmApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/study/algorithm/AlgorithmApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/study/algorithm/LeetCode111$TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/study/algorithm/LeetCode111$TreeNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/study/algorithm/LeetCode111.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/study/algorithm/LeetCode111.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/study/algorithm/LeetCode815.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/study/algorithm/LeetCode815.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/study/algorithm/LeetCode994$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/study/algorithm/LeetCode994$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/study/algorithm/LeetCode994.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/study/algorithm/LeetCode994.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/study.algorithm.LeetCode815.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/study.algorithm.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/study.algorithm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-study.algorithm.LeetCode815.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +58,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring_study/jpashop" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
