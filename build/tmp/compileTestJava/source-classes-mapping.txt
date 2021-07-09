@@ -12,5 +12,16 @@ study/algorithm/LeetCode53.java
  study.algorithm.LeetCode53
 study/algorithm/LeetCode44.java
  study.algorithm.LeetCode44
+study/algorithm/LeetCode693.java
+ study.algorithm.LeetCode693
 study/algorithm/LeetCode74.java
  study.algorithm.LeetCode74
+study/algorithm/LeetCode218.java
+ study.algorithm.LeetCode218
+study/algorithm/LeetCode838.java
+ study.algorithm.LeetCode838
+study/algorithm/LeetCode752.java
+ study.algorithm.LeetCode752
+study/algorithm/LeetCode700.java
+ study.algorithm.LeetCode700
+ study.algorithm.LeetCode700$TreeNode
