@@ -5,9 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39319bb8-acdc-41e0-80b5-7753541f3486" name="Default Changelist" comment="">
+<<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/src/test/java/study/algorithm/LeetCode1365.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/study/algorithm/LeetCode355.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+=======
+<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/src/test/java/study/algorithm/LeetCode134.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/study/algorithm/LeetCode169.java" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/src/test/java/study/algorithm/LeetCode1365.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/study/algorithm/LeetCode355.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+>>>>>>> 2a5d2128418aff84ca5a76e4c37190f0e8ee5245
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +78,23 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
+<<<<<<< Updated upstream
   <component name="RunManager" selected="JUnit.LeetCode355">
+=======
+<<<<<<< HEAD
+  <component name="RunManager" selected="JUnit.LeetCode134.test_1">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="15" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="Algorithm" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+=======
+  <component name="RunManager" selected="JUnit.LeetCode355">
+>>>>>>> 2a5d2128418aff84ca5a76e4c37190f0e8ee5245
+>>>>>>> Stashed changes
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -79,6 +106,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< Updated upstream
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="15" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -119,6 +147,30 @@
       </method>
     </configuration>
     <configuration name="LeetCode355.test_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+=======
+<<<<<<< HEAD
+    <configuration name="LeetCode752.test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;study.algorithm.LeetCode752.test&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="LeetCode134.test_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="algorithm.test" />
       <extension name="coverage">
         <pattern>
@@ -127,6 +179,84 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="study.algorithm" />
+      <option name="MAIN_CLASS_NAME" value="study.algorithm.LeetCode134" />
+      <option name="METHOD_NAME" value="test_1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeetCode169.test_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="algorithm.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="study.algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="study.algorithm" />
+      <option name="MAIN_CLASS_NAME" value="study.algorithm.LeetCode169" />
+      <option name="METHOD_NAME" value="test_1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeetCode997.case_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+=======
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="15" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="Algorithm" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeetCode1365.테스트_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+>>>>>>> Stashed changes
+      <module name="algorithm.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="study.algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="study.algorithm" />
+<<<<<<< Updated upstream
+=======
+      <option name="MAIN_CLASS_NAME" value="study.algorithm.LeetCode1365" />
+      <option name="METHOD_NAME" value="테스트_1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeetCode355" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="algorithm.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="study.algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="study.algorithm" />
+      <option name="MAIN_CLASS_NAME" value="study.algorithm.LeetCode355" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeetCode355.test_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+>>>>>>> 2a5d2128418aff84ca5a76e4c37190f0e8ee5245
+      <module name="algorithm.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="study.algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="study.algorithm" />
+>>>>>>> Stashed changes
       <option name="MAIN_CLASS_NAME" value="study.algorithm.LeetCode355" />
       <option name="METHOD_NAME" value="test_1" />
       <option name="TEST_OBJECT" value="method" />
@@ -168,11 +298,27 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< Updated upstream
         <item itemvalue="JUnit.LeetCode355" />
         <item itemvalue="JUnit.LeetCode355.test_1" />
         <item itemvalue="JUnit.LeetCode355.test_2" />
         <item itemvalue="JUnit.LeetCode1365.테스트_1" />
         <item itemvalue="JUnit.LeetCode997.case_2" />
+=======
+<<<<<<< HEAD
+        <item itemvalue="JUnit.LeetCode134.test_1" />
+        <item itemvalue="JUnit.LeetCode169.test_1" />
+        <item itemvalue="JUnit.LeetCode997.case_2" />
+        <item itemvalue="JUnit.LeetCode997.case_1" />
+        <item itemvalue="Gradle.LeetCode752.test" />
+=======
+        <item itemvalue="JUnit.LeetCode355" />
+        <item itemvalue="JUnit.LeetCode355.test_1" />
+        <item itemvalue="JUnit.LeetCode355.test_2" />
+        <item itemvalue="JUnit.LeetCode1365.테스트_1" />
+        <item itemvalue="JUnit.LeetCode997.case_2" />
+>>>>>>> 2a5d2128418aff84ca5a76e4c37190f0e8ee5245
+>>>>>>> Stashed changes
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +331,10 @@
       <option name="presentableId" value="Default" />
       <updated>1619009320524</updated>
       <workItem from="1627138106878" duration="216000" />
-      <workItem from="1627138332611" duration="3542000" />
+      <workItem from="1627138332611" duration="5967000" />
+      <workItem from="1627220812549" duration="1055000" />
+      <workItem from="1627232558857" duration="1000" />
+      <workItem from="1628953691150" duration="3274000" />
     </task>
     <servers />
   </component>
